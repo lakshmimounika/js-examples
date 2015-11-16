@@ -1,0 +1,31 @@
+<html>
+   <head>
+     <script type="text/javascript">
+        function example()
+        {
+            if(document.getElementById("t1").value=="")
+               alert("enter your name");
+            else if(document.getElementById("t2").value=="")
+               alert("enter password");
+            else if(document.getElementById("t2").value!=document.get("t3").value)
+               alert("enter correct password");
+            else if(document.getElementById("t4").value=="")
+               alert("enter address");
+            else
+               alert("form has submitted");
+       }
+    </script>
+  </head>
+  <body>
+     <form>
+        <p align = "center">
+        Username:<input type="text" id="t1"><br><br>
+        password<input type="text" id="t2"><br><br>
+        confirmpassword<input type="text" id="t3"><br><br>
+        address<textarea rows="2" cols="25" id="t4"></textarea><br><br>
+        <input type="button" value="submit" onclick="example()">
+        <input type="reset" value="clear all">
+        </p>
+     </form>
+  </body>
+</html> 
