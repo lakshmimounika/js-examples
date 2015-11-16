@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript">
+         function palidrome()
+         {
+            var revstr="";
+            var str=document.getElementById("str").value;
+            var i= str.length;
+            for(var j=i;j>=0;j--)
+            {
+               revstr=revstr+str.charAt(j);
+            }
+            if(str==revstr)
+            {
+                alert(str+" is palidrome");
+            }
+            else
+            {
+                alert(str+" is not a palidrome");
+            }
+        }
+     </script>
+   </head>
+   <body>
+      <form>
+          enter a string:<input type="text" id="str" name ="string"/>
+          <input type="submit" value="check" onclick="palidrome()"/>
+      </form>
+   </body>
+</html>
+
